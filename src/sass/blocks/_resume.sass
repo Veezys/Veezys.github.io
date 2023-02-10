@@ -1,0 +1,77 @@
+.resume
+    padding-top: 120px
+    &__wrapper
+        padding: 60px 89px 0 65px
+        display: grid
+        grid-template-columns: repeat(2, 425px)
+        column-gap: 136px
+    &__title
+        text-align: center
+        &::before
+            top: -6px
+            left: 50%
+            transform: translate(-50%)
+    &__subtitle
+        text-align: center
+    &__divider
+        width: 60px
+        height: 0px
+        border: 3px solid $main-color
+        margin: 0 auto
+        margin-top: 25px
+    &__column
+        &-title
+            padding-left: 35px
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                width: 15px
+                height: 15px
+                border-radius: 100%
+                background: $main-color
+                left: -7px
+                top: 6px
+        ul
+            list-style-type: none
+            padding-left: 0
+            li
+                position: relative
+                &::before
+                    position: absolute
+                    content: ''
+                    width: 1px
+                    height: calc( 100% +  47px )
+                    top: -47px
+                    border: 1px solid #000000
+    &__item
+        &-head
+            position: relative
+            margin-top: 38px
+            display: grid
+            grid-template-columns: 25px 240px
+            column-gap: 16px
+            padding-left: 60px
+            &::before
+                content: ''
+                position: absolute
+                width: 43px
+                height: 1px
+                top: 5px
+                background-color: #000
+        &-location
+            margin-top: 4px
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            color: #000000
+        &-body
+            margin-top: 12px
+            padding-left: 43px
+        &-image
+            position: relative
+            @include before_circle
+            &::before
+                left: -18px
+                top: -12px
+        
