@@ -56,10 +56,15 @@
     <section class="about">
         <div class="container">
             <div class="about__block">
-                <div class="about__img"><img src="src/img/Photo.jpg" alt="photo"></div>
+                <div class="about__img">
+                    <picture>
+                        <source type="image/webp" srcset="src/img/Photo.webp">
+                        <img src="src/img/Photo.jpg" alt="photo">
+                    </picture>
+                </div>
             <div class="about__text">
                 <h3 class="title title_fs16">About me</h3>
-                <h2 class="title">My name is Alexandra</h2>
+                <h2 class="title about__title">My name is Alexandra</h2>
                 <div class="about__descr">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                 </div>
@@ -94,7 +99,7 @@
     <section class="resume">
         <div class="container">
             <h2 class="title title_fs16 skill__title">Experience</h2>
-            <div class="title title_fs36 skill__subtitle">How can I be of help</div>
+            <div class="title skill__subtitle">How can I be of help</div>
             <div class="skill__divider"></div>
 
             <div class="resume__wrapper">
@@ -168,7 +173,6 @@
                 
             </div>
         </div>
-
     </section>
 
 
@@ -331,10 +335,15 @@
     <section class="contacts">
         <div class="container">
             <div class="contacts__block">
-                <div class="contacts__img"><img src="src/img/Photo.jpg" alt="photo"></div>
+                <div class="contacts__img">
+                    <picture>
+                        <source type="image/webp" srcset="src/img/Photo.webp">
+                        <img src="src/img/Photo.jpg" alt="photo">
+                    </picture>
+                </div>
                 <div class="contacts__text">
                     <h3 class="title title_fs16">Contacts</h3>
-                    <h2 class="title">Contact me</h2>
+                    <h2 class="title contacts__title">Contact me</h2>
                     <div class="title title_fs14 contacts_divider contacts_mt20">
                         Any way you like:
                     </div>
@@ -349,21 +358,25 @@
 
                 <form action="#" class="contacts__form">
                     <div class="contacts__input">
-                        <input name="name" id="name" type="text">
+                        <input required name="name" id="name" type="text">
                         <label for="name">Your name</label>
                     </div>
-                    <div class="contacts__input">
-                        <input name="email" id="email" type="email">
+                    <div class="contacts__input block">
+                        <input required name="email" id="email" type="email">
                         <label for="email">Your email</label>
                     </div>
                     <div class="contacts__textarea">
                         <textarea name="textarea" id="textarea"></textarea>
                         <label for="textarea">Your message</label>
                     </div>
-                    <div>
+                    <div class="contacts__triggers">
                         <button class="btn">
                             Send message
                         </button>
+                        <div class="contacts__policy">
+                            <input required id="checkbox" name="checkbox" type="checkbox">
+                            <span>I agree<a href="src/policy.html"> to the privacy policy</a></span>
+                        </div>
                     </div>
                 </form>
             </div>
